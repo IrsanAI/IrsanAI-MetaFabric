@@ -3,6 +3,39 @@
 This file defines the command layer for MetaFabric.
 It sits above ordinary repo instructions and is meant to be read by future agents as a canonical operating reference.
 
+---
+
+## Language Standards | Sprachstandards
+
+### DE Sandbox Commands
+Use these when the user writes in German.
+
+- **SAMC** → systemarchitektonisch und metakognitiv
+- **MFC** → MetaFabric fortsetzen
+- **SMC** → Source-Intent Mapping & Convergence
+- **"setze SAMC fort"** → continue in the SAMC mode
+- **"setze SMC fort"** → detect source intent, compare IST/SOLL, converge iteratively
+- **"führe MFC aus"** → continue the MetaFabric build in SAMC mode
+
+### EN Sandbox Commands
+Use these when the user writes in English.
+
+- **SAMC** → system-architectural and metacognitive
+- **MFC** → continue MetaFabric
+- **SMC** → Source-Intent Mapping & Convergence
+- **"continue SAMC"** → continue in the SAMC mode
+- **"continue MFC"** → continue the MetaFabric build in SAMC mode
+- **"continue SMC"** → detect source intent, compare IS/SHOULD, converge iteratively
+
+### Fast Recognition Rule
+If a user message contains a command-like intent, first detect the language, then follow the matching sandbox standard.
+
+- German request → answer and continue in German unless the task clearly needs bilingual output.
+- English request → answer and continue in English unless the task clearly needs bilingual output.
+- Mixed-language request → preserve the user's dominant language and keep the command labels bilingual.
+
+---
+
 ## Hierarchy
 
 1. **IRSANAI Commands.md** — highest project command layer
@@ -10,10 +43,12 @@ It sits above ordinary repo instructions and is meant to be read by future agent
 3. **Repository docs** — architecture, roadmap, implementation details
 4. **Code and UI** — execution layer
 
+---
+
 ## Canonical Modes
 
 ### SAMC
-**systemarchitektonisch und metakognitiv**
+**systemarchitektonisch und metakognitiv** / **system-architectural and metacognitive**
 
 Use this mode when the response or task should be:
 - architecture-first
@@ -41,6 +76,8 @@ Use this mode when the task is not only to continue the build, but to:
 
 SMC is therefore the command for **intent alignment, contextual resonance, and iterative approximation**.
 
+---
+
 ## Command Rule
 
 When the user says something semantically equivalent to:
@@ -55,6 +92,8 @@ When the user says something semantically equivalent to:
 - "align source / ist / soll"
 
 …the assistant should continue the repo and architecture work in the correct mode.
+
+---
 
 ## Live Proof / Example
 
@@ -77,6 +116,8 @@ The assistant should:
 - move the system toward the target with minimal unnecessary loss
 - preserve resonance with the existing repository state
 
+---
+
 ## Behavioral Invariants
 
 - Observation first
@@ -84,6 +125,8 @@ The assistant should:
 - Confidence should be visible
 - Feedback is a learning signal
 - Self-hosted support remains a first-class path
+
+---
 
 ## Notes for Future Agents
 
