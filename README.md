@@ -32,22 +32,28 @@ Dieses Repository startet mit einer bewusst kleinen, öffentlichen und sauberen 
 
 ### Projektvokabular
 
-- **MetaFabric** = Produkt und Control Plane.
-- **SAMC** = **systemarchitektonisch und metakognitiv**.
-- **MFC** = **MetaFabric Continuation**.
-- **SMC** = **Source-Intent Mapping & Convergence**.
+| Begriff | Bedeutung |
+|---|---|
+| **MetaFabric** | Produkt und Control Plane |
+| **SAMC** | systemarchitektonisch und metakognitiv |
+| **MFC** | MetaFabric Continuation |
+| **SMC** | Source-Intent Mapping & Convergence |
 
 ### Command Standards | Sprachstandards
 
-Die Kommandos sind bewusst zweisprachig geführt:
+| Sprache | Sandbox Commands | Bedeutung |
+|---|---|---|
+| **DE** | `SAMC`, `MFC`, `SMC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence |
+| **EN** | `SAMC`, `MFC`, `SMC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence |
 
-- **Deutsch**: `SAMC`, `MFC`, `SMC`
-- **English**: `SAMC`, `MFC`, `SMC`
-
-Kurzregeln:
-- **SAMC** = Denkmodus für systemarchitektonisch-metakognitives Arbeiten
-- **MFC** = MetaFabric ohne Kontextverlust fortsetzen
-- **SMC** = Source-Intent, IST und SOLL abgleichen und iterativ konvergieren
+| Trigger phrase | Interpreted as |
+|---|---|
+| `SAMC fortsetzen` | Continue in SAMC mode |
+| `continue SAMC` | Continue in SAMC mode |
+| `führe MFC aus` | Continue the MetaFabric build in SAMC mode |
+| `continue MFC` | Continue the MetaFabric build in SAMC mode |
+| `setze SMC fort` | Detect source intent, compare IST/SOLL, converge iteratively |
+| `continue SMC` | Detect source intent, compare IS/SHOULD, converge iteratively |
 
 Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“**, **„MFC“** oder **„SMC“** Bezug genommen werden.
 
@@ -106,22 +112,25 @@ This repository starts with a deliberately small, public-safe foundation:
 
 ### Project Vocabulary
 
-- **MetaFabric** = the product and control plane.
-- **SAMC** = **system-architectural and metacognitive**.
-- **MFC** = **MetaFabric Continuation**.
-- **SMC** = **Source-Intent Mapping & Convergence**.
+| Term | Meaning |
+|---|---|
+| **MetaFabric** | Product and control plane |
+| **SAMC** | system-architectural and metacognitive |
+| **MFC** | MetaFabric Continuation |
+| **SMC** | Source-Intent Mapping & Convergence |
 
 ### Command Standards | Language Standards
 
-The commands are intentionally bilingual:
+| Language | Sandbox Commands | Meaning |
+|---|---|---|
+| **DE** | `SAMC`, `MFC`, `SMC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence |
+| **EN** | `SAMC`, `MFC`, `SMC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence |
 
-- **German**: `SAMC`, `MFC`, `SMC`
-- **English**: `SAMC`, `MFC`, `SMC`
-
-Short rules:
-- **SAMC** = thinking mode for system-architectural and metacognitive work
-- **MFC** = continue MetaFabric without losing context
-- **SMC** = align source intent, current state, and target state, then converge iteratively
+| Trigger phrase | Interpreted as |
+|---|---|
+| `continue SAMC` | Continue in SAMC mode |
+| `continue MFC` | Continue the MetaFabric build in SAMC mode |
+| `continue SMC` | Detect source intent, compare IS/SHOULD, converge iteratively |
 
 When something in this style is requested later, we can refer to it directly as **“continue SAMC”**, **“MFC”**, or **“SMC”**.
 
