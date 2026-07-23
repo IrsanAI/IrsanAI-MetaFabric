@@ -37,6 +37,18 @@ Dieses Repository startet mit einer bewusst kleinen, öffentlichen und sauberen 
 - **MFC** = **MetaFabric Continuation**.
 - **SMC** = **Source-Intent Mapping & Convergence**.
 
+### Command Standards | Sprachstandards
+
+Die Kommandos sind bewusst zweisprachig geführt:
+
+- **Deutsch**: `SAMC`, `MFC`, `SMC`
+- **English**: `SAMC`, `MFC`, `SMC`
+
+Kurzregeln:
+- **SAMC** = Denkmodus für systemarchitektonisch-metakognitives Arbeiten
+- **MFC** = MetaFabric ohne Kontextverlust fortsetzen
+- **SMC** = Source-Intent, IST und SOLL abgleichen und iterativ konvergieren
+
 Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“**, **„MFC“** oder **„SMC“** Bezug genommen werden.
 
 ### Command Layer
@@ -98,6 +110,18 @@ This repository starts with a deliberately small, public-safe foundation:
 - **SAMC** = **system-architectural and metacognitive**.
 - **MFC** = **MetaFabric Continuation**.
 - **SMC** = **Source-Intent Mapping & Convergence**.
+
+### Command Standards | Language Standards
+
+The commands are intentionally bilingual:
+
+- **German**: `SAMC`, `MFC`, `SMC`
+- **English**: `SAMC`, `MFC`, `SMC`
+
+Short rules:
+- **SAMC** = thinking mode for system-architectural and metacognitive work
+- **MFC** = continue MetaFabric without losing context
+- **SMC** = align source intent, current state, and target state, then converge iteratively
 
 When something in this style is requested later, we can refer to it directly as **“continue SAMC”**, **“MFC”**, or **“SMC”**.
 
