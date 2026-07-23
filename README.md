@@ -43,8 +43,8 @@ Dieses Repository startet mit einer bewusst kleinen, öffentlichen und sauberen 
 
 | Sprache | Sandbox Commands | Bedeutung |
 |---|---|---|
-| **DE** | `SAMC`, `MFC`, `SMC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence |
-| **EN** | `SAMC`, `MFC`, `SMC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence |
+| **DE** | `SAMC`, `MFC`, `SMC`, `IDC`, `IGC`, `RLC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence; `IDC` = Intent Drift Check; `IGC` = Intent Governance Check; `RLC` = Resonance Layer Check |
+| **EN** | `SAMC`, `MFC`, `SMC`, `IDC`, `IGC`, `RLC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence; `IDC` = Intent Drift Check; `IGC` = Intent Governance Check; `RLC` = Resonance Layer Check |
 
 | Trigger phrase | Interpreted as |
 |---|---|
@@ -54,6 +54,8 @@ Dieses Repository startet mit einer bewusst kleinen, öffentlichen und sauberen 
 | `continue MFC` | Continue the MetaFabric build in SAMC mode |
 | `setze SMC fort` | Detect source intent, compare IST/SOLL, converge iteratively |
 | `continue SMC` | Detect source intent, compare IS/SHOULD, converge iteratively |
+
+**Output expectation:** Jeder Command liefert einen klar benennbaren Output mit `summary`, `state`, `delta`, `risks`, `next_step` und `confidence`. Die konkreten Felder sind in [`IRSANAI Commands.md`](./IRSANAI%20Commands.md) festgelegt.
 
 Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“**, **„MFC“** oder **„SMC“** Bezug genommen werden.
 
@@ -123,14 +125,16 @@ This repository starts with a deliberately small, public-safe foundation:
 
 | Language | Sandbox Commands | Meaning |
 |---|---|---|
-| **DE** | `SAMC`, `MFC`, `SMC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence |
-| **EN** | `SAMC`, `MFC`, `SMC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence |
+| **DE** | `SAMC`, `MFC`, `SMC`, `IDC`, `IGC`, `RLC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence; `IDC` = Intent Drift Check; `IGC` = Intent Governance Check; `RLC` = Resonance Layer Check |
+| **EN** | `SAMC`, `MFC`, `SMC`, `IDC`, `IGC`, `RLC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence; `IDC` = Intent Drift Check; `IGC` = Intent Governance Check; `RLC` = Resonance Layer Check |
 
 | Trigger phrase | Interpreted as |
 |---|---|
 | `continue SAMC` | Continue in SAMC mode |
 | `continue MFC` | Continue the MetaFabric build in SAMC mode |
 | `continue SMC` | Detect source intent, compare IS/SHOULD, converge iteratively |
+
+**Output expectation:** Every command should produce a clearly readable output with `summary`, `state`, `delta`, `risks`, `next_step`, and `confidence`. The exact fields are defined in [`IRSANAI Commands.md`](./IRSANAI%20Commands.md).
 
 When something in this style is requested later, we can refer to it directly as **“continue SAMC”**, **“MFC”**, or **“SMC”**.
 
