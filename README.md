@@ -35,8 +35,9 @@ Dieses Repository startet mit einer bewusst kleinen, öffentlichen und sauberen 
 - **MetaFabric** = Produkt und Control Plane.
 - **SAMC** = **systemarchitektonisch und metakognitiv**.
 - **MFC** = **MetaFabric Continuation**.
+- **SMC** = **Source-Intent Mapping & Convergence**.
 
-Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“** oder **„MFC“** Bezug genommen werden.
+Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“**, **„MFC“** oder **„SMC“** Bezug genommen werden.
 
 ### Command Layer
 
@@ -96,8 +97,9 @@ This repository starts with a deliberately small, public-safe foundation:
 - **MetaFabric** = the product and control plane.
 - **SAMC** = **system-architectural and metacognitive**.
 - **MFC** = **MetaFabric Continuation**.
+- **SMC** = **Source-Intent Mapping & Convergence**.
 
-When something in this style is requested later, we can refer to it directly as **“continue SAMC”** or **“MFC”**.
+When something in this style is requested later, we can refer to it directly as **“continue SAMC”**, **“MFC”**, or **“SMC”**.
 
 ### Command Layer
 
