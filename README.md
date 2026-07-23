@@ -18,7 +18,7 @@ MetaFabric ist der reine Kern des IrsanAI-Systems: ein reflektionsorientiertes P
 - **Capabilities first** — Provider sind austauschbare Ausführungsinstanzen.
 - **Beobachtung vor Urteil** — das System misst Zustand, nicht Identität.
 - **Metakognitiv by design** — jede starke Schlussfolgerung trägt Unsicherheit und Nachvollziehbarkeit.
-- **Self-hosted friendly** — Cloud, локal und private Endpunkte teilen sich eine gemeinsame Control Plane.
+- **Self-hosted friendly** — Cloud, lokal und private Endpunkte teilen sich eine gemeinsame Control Plane.
 - **Feedback-native** — Nutzer können direkt reagieren, bewerten und verbessern.
 
 ### v1 Scope
@@ -34,8 +34,15 @@ Dieses Repository startet mit einer bewusst kleinen, öffentlichen und sauberen 
 
 - **MetaFabric** = Produkt und Control Plane.
 - **SAMC** = **systemarchitektonisch und metakognitiv**.
+- **MFC** = **MetaFabric Continuation**.
 
-Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“** Bezug genommen werden.
+Wenn später etwas in diesem Stil gewünscht wird, kann darauf direkt mit **„SAMC fortsetzen“** oder **„MFC“** Bezug genommen werden.
+
+### Command Layer
+
+Die kanonische Command-Referenz liegt hier:
+
+- [`IRSANAI Commands.md`](./IRSANAI%20Commands.md)
 
 ### Geplante Struktur
 
@@ -44,6 +51,7 @@ IrsanAI-MetaFabric/
 ├── index.html
 ├── styles.css
 ├── app.js
+├── IRSANAI Commands.md
 └── README.md
 ```
 
@@ -87,8 +95,15 @@ This repository starts with a deliberately small, public-safe foundation:
 
 - **MetaFabric** = the product and control plane.
 - **SAMC** = **system-architectural and metacognitive**.
+- **MFC** = **MetaFabric Continuation**.
 
-When something in this style is requested later, we can refer to it directly as **“continue SAMC”**.
+When something in this style is requested later, we can refer to it directly as **“continue SAMC”** or **“MFC”**.
+
+### Command Layer
+
+The canonical command reference lives here:
+
+- [`IRSANAI Commands.md`](./IRSANAI%20Commands.md)
 
 ### Planned Structure
 
@@ -97,6 +112,7 @@ IrsanAI-MetaFabric/
 ├── index.html
 ├── styles.css
 ├── app.js
+├── IRSANAI Commands.md
 └── README.md
 ```
 
