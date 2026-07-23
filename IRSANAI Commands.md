@@ -7,27 +7,24 @@ It sits above ordinary repo instructions and is meant to be read by future agent
 
 ## Language Standards | Sprachstandards
 
-### DE Sandbox Commands
-Use these when the user writes in German.
+| Language | Sandbox Commands | Meaning |
+|---|---|---|
+| **DE** | `SAMC`, `MFC`, `SMC` | `SAMC` = systemarchitektonisch und metakognitiv; `MFC` = MetaFabric fortsetzen; `SMC` = Source-Intent Mapping & Convergence |
+| **EN** | `SAMC`, `MFC`, `SMC` | `SAMC` = system-architectural and metacognitive; `MFC` = continue MetaFabric; `SMC` = Source-Intent Mapping & Convergence |
 
-- **SAMC** → systemarchitektonisch und metakognitiv
-- **MFC** → MetaFabric fortsetzen
-- **SMC** → Source-Intent Mapping & Convergence
-- **"setze SAMC fort"** → continue in the SAMC mode
-- **"setze SMC fort"** → detect source intent, compare IST/SOLL, converge iteratively
-- **"führe MFC aus"** → continue the MetaFabric build in SAMC mode
+### Quick Lookup | Schnellzugriff
 
-### EN Sandbox Commands
-Use these when the user writes in English.
-
-- **SAMC** → system-architectural and metacognitive
-- **MFC** → continue MetaFabric
-- **SMC** → Source-Intent Mapping & Convergence
-- **"continue SAMC"** → continue in the SAMC mode
-- **"continue MFC"** → continue the MetaFabric build in SAMC mode
-- **"continue SMC"** → detect source intent, compare IS/SHOULD, converge iteratively
+| Trigger phrase | Interpreted as |
+|---|---|
+| `setze SAMC fort` | Continue in SAMC mode |
+| `continue SAMC` | Continue in SAMC mode |
+| `führe MFC aus` | Continue the MetaFabric build in SAMC mode |
+| `continue MFC` | Continue the MetaFabric build in SAMC mode |
+| `setze SMC fort` | Detect source intent, compare IST/SOLL, converge iteratively |
+| `continue SMC` | Detect source intent, compare IS/SHOULD, converge iteratively |
 
 ### Fast Recognition Rule
+
 If a user message contains a command-like intent, first detect the language, then follow the matching sandbox standard.
 
 - German request → answer and continue in German unless the task clearly needs bilingual output.
@@ -47,24 +44,13 @@ If a user message contains a command-like intent, first detect the language, the
 
 ## Canonical Modes
 
-### SAMC
-**systemarchitektonisch und metakognitiv** / **system-architectural and metacognitive**
+| Mode | Full meaning | Use it for |
+|---|---|---|
+| **SAMC** | systemarchitektonisch und metakognitiv / system-architectural and metacognitive | Architecture-first, reflective, context-aware, causally consistent, traceable work |
+| **MFC** | MetaFabric Continuation | Continue the MetaFabric build in SAMC mode without repeating the full instruction |
+| **SMC** | Source-Intent Mapping & Convergence | Detect source intent, infer target intent, compare current intent, and converge iteratively |
 
-Use this mode when the response or task should be:
-- architecture-first
-- reflective
-- context-aware
-- causally consistent
-- traceable
-- low in overclaiming
-
-### MFC
-**MetaFabric Continuation**
-
-Use this command to continue the MetaFabric build in SAMC mode without repeating the full instruction.
-
-### SMC
-**Source-Intent Mapping & Convergence**
+### SMC Detail
 
 Use this mode when the task is not only to continue the build, but to:
 - detect the source intent from a repository, URL, article, blog, vlog, or page
@@ -97,24 +83,10 @@ When the user says something semantically equivalent to:
 
 ## Live Proof / Example
 
-If the user says:
-
-> "okay... denke jetzt SAMC mäßig und führe MFC aus"
-
-The assistant should interpret this as:
-- enter SAMC thinking mode
-- continue MetaFabric under MFC
-- keep the architecture stable, reflective, and causal
-
-If the user says:
-
-> "setze SMC fort"
-
-The assistant should:
-- detect the source intent of the current artifact or URL
-- compare source intent, current intent, and target intent
-- move the system toward the target with minimal unnecessary loss
-- preserve resonance with the existing repository state
+| User phrase | Assistant interpretation |
+|---|---|
+| `okay... denke jetzt SAMC mäßig und führe MFC aus` | enter SAMC thinking mode, continue MetaFabric under MFC, keep the architecture stable, reflective, and causal |
+| `setze SMC fort` | detect source intent of the current artifact or URL, compare source intent, current intent, and target intent, then move the system toward the target with minimal unnecessary loss |
 
 ---
 
